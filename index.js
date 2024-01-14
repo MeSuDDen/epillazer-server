@@ -6,11 +6,11 @@ const bodyParser = require('body-parser')
 
 require('dotenv').config()
 
-const PORT = 3030
-const HOST = '89.104.71.174'
-const USER = 'root'
-const PASS = 'root'
-const DB = 'epillazer27'
+const PORT = process.env.PORT || 3030
+const HOST = process.env.HOST
+const USER = process.env.USER
+const PASS = process.env.PASS
+const DB = process.env.DB
 
 const app = express()
 
